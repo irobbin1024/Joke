@@ -7,28 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKUserModel.h"
 
 typedef struct {
     long up;
     long down;
 } Votes;
 
-@interface JKUser : NSObject
-
-@property (nonatomic, assign) long long createAt;
-@property (nonatomic, strong) NSString * icon;
-@property (nonatomic, strong) NSString * userID;
-//@property (nonatomic, strong) NSString * lastDevice;
-//@property (nonatomic, strong) NSString * lastVisitedAt;
-@property (nonatomic, strong) NSString * login;
-//@property (nonatomic, strong) NSString * role;
-@property (nonatomic, strong) NSString * state;
-
-+ (JKUser *)userWithData:(NSDictionary *)data;
-
-- (NSString *)iconURL;
-
-@end
 
 @interface JKJokeModel : NSObject
 
@@ -42,7 +27,7 @@ typedef struct {
 @property (nonatomic, strong) NSString * state;
 //@property (nonatomic, strong) NSString * tag;
 //@property (nonatomic, assign) imageSize;
-@property (nonatomic, strong) JKUser * user;
+@property (nonatomic, strong) JKUserModel * user;
 @property (nonatomic, assign) Votes votes;
 
 

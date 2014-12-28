@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1814AB1A4FBF9B007BEF14 /* JKJokeCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1814AA1A4FBF9B007BEF14 /* JKJokeCommentCell.m */; };
+		CE1814AE1A4FC4A8007BEF14 /* JKJokeCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1814AD1A4FC4A8007BEF14 /* JKJokeCommentModel.m */; };
+		CE1814B11A4FC4B8007BEF14 /* JKUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1814B01A4FC4B8007BEF14 /* JKUserModel.m */; };
 		CE36400E1A4D594A0016A008 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE36400D1A4D594A0016A008 /* main.m */; };
 		CE3640111A4D594A0016A008 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3640101A4D594A0016A008 /* AppDelegate.m */; };
 		CE36401A1A4D594A0016A008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3640181A4D594A0016A008 /* Main.storyboard */; };
@@ -41,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1814A91A4FBF9B007BEF14 /* JKJokeCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentCell.h; sourceTree = "<group>"; };
+		CE1814AA1A4FBF9B007BEF14 /* JKJokeCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentCell.m; sourceTree = "<group>"; };
+		CE1814AC1A4FC4A8007BEF14 /* JKJokeCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentModel.h; sourceTree = "<group>"; };
+		CE1814AD1A4FC4A8007BEF14 /* JKJokeCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentModel.m; sourceTree = "<group>"; };
+		CE1814AF1A4FC4B8007BEF14 /* JKUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKUserModel.h; sourceTree = "<group>"; };
+		CE1814B01A4FC4B8007BEF14 /* JKUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKUserModel.m; sourceTree = "<group>"; };
 		CE3640081A4D594A0016A008 /* Joke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE36400C1A4D594A0016A008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE36400D1A4D594A0016A008 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -172,6 +181,8 @@
 				CE58E1A01A4ED6C5005A443D /* JKLoadMoreView.h */,
 				CE58E1A11A4ED6C5005A443D /* JKLoadMoreView.m */,
 				CE58E1A31A4ED6EA005A443D /* JKLoadMoreView.xib */,
+				CE1814A91A4FBF9B007BEF14 /* JKJokeCommentCell.h */,
+				CE1814AA1A4FBF9B007BEF14 /* JKJokeCommentCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,6 +207,10 @@
 			children = (
 				CE36403D1A4D63770016A008 /* JKJokeModel.h */,
 				CE36403E1A4D63770016A008 /* JKJokeModel.m */,
+				CE1814AC1A4FC4A8007BEF14 /* JKJokeCommentModel.h */,
+				CE1814AD1A4FC4A8007BEF14 /* JKJokeCommentModel.m */,
+				CE1814AF1A4FC4B8007BEF14 /* JKUserModel.h */,
+				CE1814B01A4FC4B8007BEF14 /* JKUserModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,10 +345,13 @@
 				CE36400E1A4D594A0016A008 /* main.m in Sources */,
 				CE58E1A21A4ED6C5005A443D /* JKLoadMoreView.m in Sources */,
 				CE3640601A4E9A1E0016A008 /* JKShowImageView.m in Sources */,
+				CE1814AE1A4FC4A8007BEF14 /* JKJokeCommentModel.m in Sources */,
 				CE3640361A4D63190016A008 /* JKJokeCell.m in Sources */,
 				CE58E19F1A4ED54A005A443D /* JKJokeCommentController.m in Sources */,
 				CE36405B1A4E63760016A008 /* UIImageView+Util.m in Sources */,
+				CE1814B11A4FC4B8007BEF14 /* JKUserModel.m in Sources */,
 				CE36403A1A4D634A0016A008 /* JKJokeController.m in Sources */,
+				CE1814AB1A4FBF9B007BEF14 /* JKJokeCommentCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

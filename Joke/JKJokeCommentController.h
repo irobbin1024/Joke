@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKJokeModel.h"
+#import "JKLoadMoreView.h"
 
-@interface JKJokeCommentController : UITableViewController
+@interface JKJokeCommentController : UITableViewController <LoadMoreDelegate>
+
+@property (nonatomic, strong) JKJokeModel * jokeModel;
 
 @end

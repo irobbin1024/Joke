@@ -20,6 +20,7 @@ typedef enum{
 
 @interface JKViewControllerUtil : NSObject
 
++ (UILabel *)customNavigationTitleLabelWithString:(NSString *)title;
 + (NSString *)titleWithJokeType:(JokeType)jokeType;
 + (UILabel *)navigationTitleLabelWithJokeType:(JokeType)jokeType;
 

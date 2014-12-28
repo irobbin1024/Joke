@@ -100,5 +100,11 @@
         [self.delegate showJokeImageAction:self.jokeModel];
     }
 }
+- (IBAction)showCommentAction:(id)sender
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(showCommentAction:)]) {
+        [self.delegate showCommentAction:self.jokeModel];
+    }
+}
 
 @end

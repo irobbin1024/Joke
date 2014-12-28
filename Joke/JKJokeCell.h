@@ -13,6 +13,7 @@
 
 @optional
 - (void)showJokeImageAction:(JKJokeModel *)jokeModel;
+- (void)showCommentAction:(JKJokeModel *)jokeModel;
 
 @end
 

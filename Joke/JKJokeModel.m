@@ -9,30 +9,6 @@
 #import "JKJokeModel.h"
 #import "NSDictionary+Util.h"
 
-@implementation JKUser
-
-+ (JKUser *)userWithData:(NSDictionary *)data
-{
-    if ((id)data == [NSNull null] || data == nil || data.allKeys.count <= 0) return nil;
-    
-    JKUser * userModel = [[JKUser alloc]init];
-    userModel.createAt = [data[@"created_at"]longLongValue];
-    userModel.icon = [data stringWithKey:@"icon"];
-    userModel.userID = data[@"id"];
-    userModel.login = data[@"login"];
-    userModel.state = data[@"role"];
-    
-    return userModel;
-}
-
-- (NSString *)iconURL
-{
-    
-    // medium
-    return [NSString stringWithFormat:@"http://pic.qiushibaike.com/system/avtnew/%@/%@/medium/%@", [self.userID substringToIndex:self.userID.length - 4], self.userID, self.icon];
-}
-
-@end
 
 @implementation JKJokeModel
 
@@ -59,7 +35,7 @@
     jokeModel.image = data[@"image"];
     jokeModel.publishAt = [data[@"published_at"]longLongValue];
     jokeModel.state = data[@"state"];
-    jokeModel.user = [JKUser userWithData:data[@"user"]];
+    jokeModel.user = [JKUserModel userWithData:data[@"user"]];
     Votes votes;
     votes.up = [data[@"votes"][@"up"]longValue];
     votes.down = [data[@"votes"][@"down"]longValue];

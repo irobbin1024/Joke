@@ -11,6 +11,7 @@
 #import "JKJokeCell.h"
 #import "JKNetworkUtil.h"
 #import "JKShowImageView.h"
+#import "JKJokeCommentController.h"
 
 @interface JKJokeController () {
     NSInteger _jokeCount;
@@ -57,13 +58,9 @@
 {
     self.refreshControl = [[UIRefreshControl alloc]init];
     self.refreshControl.tintColor = [UIColor orangeColor];
-//    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
     [self.refreshControl addTarget:self action:@selector(refreshAction:) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView addSubview:self.refreshControl];
-    
-    
-    
 }
 
 - (void)refreshData
@@ -74,6 +71,8 @@
         [self.refreshControl endRefreshing];
         
         self.datasource = [NSMutableArray arrayWithArray:[JKJokeModel jokeArrayWithData:jsonData[@"items"]]];
+        _jokeCount = [jsonData[@"count"]longValue];
+        _jokeTotal = [jsonData[@"total"]longValue];
         [self.tableView reloadData];
         
         // 在这边添加加载更多，避免初次进入的视图错乱
@@ -95,6 +94,8 @@
     [JKNetworkUtil requestJokeWithJokeType:self.jokeType pageNo:_jokePage success:^(NSDictionary *jsonData) {
         
         [self.datasource  addObjectsFromArray:[JKJokeModel jokeArrayWithData:jsonData[@"items"]]];
+        _jokeCount = [jsonData[@"count"]longValue];
+        _jokeTotal = [jsonData[@"total"]longValue];
         
         [self.tableView reloadData];
         
@@ -120,6 +121,13 @@
 - (void)showJokeImageAction:(JKJokeModel *)jokeModel
 {
     [JKShowImageView showWithImageURL:[jokeModel largeImageURL]];
+}
+
+- (void)showCommentAction:(JKJokeModel *)jokeModel
+{
+    JKJokeCommentController * commentController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"JKJokeCommentController"];
+    commentController.jokeModel = jokeModel;
+    [self.navigationController pushViewController:commentController animated:YES];
 }
 
 #pragma mark - LoadMore Delegate

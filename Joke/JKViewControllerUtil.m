@@ -32,9 +32,14 @@
 }
 + (UILabel *)navigationTitleLabelWithJokeType:(JokeType)jokeType
 {
+    return [JKViewControllerUtil customNavigationTitleLabelWithString:[JKViewControllerUtil titleWithJokeType:jokeType]];
+}
+
++ (UILabel *)customNavigationTitleLabelWithString:(NSString *)title
+{
     UILabel * titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    [titleLabel setText:[JKViewControllerUtil titleWithJokeType:jokeType]];
+    [titleLabel setText:title];
     [titleLabel setTextColor:[UIColor orangeColor]];
     
     return titleLabel;

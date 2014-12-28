@@ -28,7 +28,17 @@
             break;
     }
     
-    NSURLRequest * request = [[NSURLRequest alloc]initWithURL:requestURL];
+    [JKNetworkUtil sendRequestWithURL:requestURL success:success failure:failure];
+}
+
++ (void)requestJokeCommentWithJokeID:(NSString *)jokeID pageNo:(NSInteger)pageNo success:(void (^)(NSDictionary * jsonData))success failure:(void (^)())failure
+{
+    [JKNetworkUtil sendRequestWithURL:[JKNetworkUtil requestJokeCommentURLWithPageNo:pageNo jokeID:jokeID] success:success failure:failure];
+}
+
++ (void)sendRequestWithURL:(NSURL *)url success:(void (^)(NSDictionary * jsonData))success failure:(void (^)())failure
+{
+    NSURLRequest * request = [[NSURLRequest alloc]initWithURL:url];
     NSOperationQueue * queue = [[NSOperationQueue alloc]init];
     
     [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -67,6 +77,12 @@
 + (NSURL *)truthURLWithPageNo:(NSInteger)pageNo
 {
     NSURL * url = [[NSURL alloc]initWithString:[NSString stringWithFormat:@"%@%ld", @"http://m2.qiushibaike.com/article/list/imgrank?count=20&page=", (long)pageNo]];
+    return url;
+}
+
++ (NSURL *)requestJokeCommentURLWithPageNo:(NSInteger)pageNo jokeID:(NSString *)jokeID
+{
+    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"http://m2.qiushibaike.com/article/%@/comments?count=20&page=%ld", jokeID, (long)pageNo]];
     return url;
 }
 

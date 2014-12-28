@@ -12,5 +12,6 @@
 @interface JKNetworkUtil : NSObject
 
 + (void)requestJokeWithJokeType:(JokeType)jokeType pageNo:(NSInteger)pageNo success:(void (^)(NSDictionary * jsonData))success failure:(void (^)())failure;
++ (void)requestJokeCommentWithJokeID:(NSString *)jokeID pageNo:(NSInteger)pageNo success:(void (^)(NSDictionary * jsonData))success failure:(void (^)())failure;
 
 @end
