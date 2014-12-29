@@ -19,7 +19,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QM3-79-SAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1209" y="-136"/>
+            <point key="canvasLocation" x="-81" y="134"/>
         </scene>
         <!--Joke Controller-->
         <scene sceneID="Vql-3e-F7n">
@@ -326,7 +326,83 @@
                     <view key="view" contentMode="scaleToFill" id="9CN-Mp-DkW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此程序参考（JokeClient-Swift）制作而成。你可以自由使用此程序代码" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-31-09P">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="3uc-Yc-fs1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3uc-Yc-fs1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3uc-Yc-fs1"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后续会加入更多特性和功能，尽情期待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvG-Kx-2Nh">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xC6-pR-ZrP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.52549019610000003" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xC6-pR-ZrP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="xC6-pR-ZrP"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xvG-Kx-2Nh" firstAttribute="top" secondItem="FXd-31-09P" secondAttribute="bottom" constant="16" id="9Iu-DR-IdG"/>
+                            <constraint firstItem="FXd-31-09P" firstAttribute="trailing" secondItem="9CN-Mp-DkW" secondAttribute="trailingMargin" id="CC8-m4-Bb1"/>
+                            <constraint firstItem="xvG-Kx-2Nh" firstAttribute="trailing" secondItem="9CN-Mp-DkW" secondAttribute="trailingMargin" id="HJa-7a-x3g"/>
+                            <constraint firstItem="xvG-Kx-2Nh" firstAttribute="leading" secondItem="9CN-Mp-DkW" secondAttribute="leadingMargin" id="KO1-kb-Soz"/>
+                            <constraint firstItem="FXd-31-09P" firstAttribute="top" secondItem="qLy-wp-Ebq" secondAttribute="bottom" constant="82" id="Pk9-ha-te6"/>
+                            <constraint firstItem="FXd-31-09P" firstAttribute="leading" secondItem="9CN-Mp-DkW" secondAttribute="leadingMargin" id="pFZ-O5-gcS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FXd-31-09P"/>
+                                <exclude reference="xvG-Kx-2Nh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CC8-m4-Bb1"/>
+                                <exclude reference="Pk9-ha-te6"/>
+                                <exclude reference="pFZ-O5-gcS"/>
+                                <exclude reference="9Iu-DR-IdG"/>
+                                <exclude reference="HJa-7a-x3g"/>
+                                <exclude reference="KO1-kb-Soz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FXd-31-09P"/>
+                                <include reference="xvG-Kx-2Nh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CC8-m4-Bb1"/>
+                                <include reference="Pk9-ha-te6"/>
+                                <include reference="pFZ-O5-gcS"/>
+                                <include reference="9Iu-DR-IdG"/>
+                                <include reference="HJa-7a-x3g"/>
+                                <include reference="KO1-kb-Soz"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sS6-TY-hSk" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -43,7 +43,7 @@
     [self.userImageView setImageWithURL:[self.jokeCommentModel.user iconURL] placehold:[UIImage imageNamed:@"avatar.jpg"]];
     self.userNameLabel.Text = self.jokeCommentModel.user.login == nil ? @"匿名" : self.jokeCommentModel.user.login;
     self.contentLabel.text = self.jokeCommentModel.content;
-    self.floorLabel.text = [NSString stringWithFormat:@"%ld楼", self.jokeCommentModel.floor];
+    self.floorLabel.text = [NSString stringWithFormat:@"%ld楼", (long)self.jokeCommentModel.floor];
     self.publishDateLabel.text = [self.jokeCommentModel.user createAtDateString];
     
     [self setNeedsLayout];

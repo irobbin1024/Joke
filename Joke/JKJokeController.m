@@ -49,7 +49,6 @@
     [super viewDidAppear:animated];
     
     self.navigationController.hidesBarsOnSwipe = YES;
-    
 }
 
 #pragma mark - Init & Datasource

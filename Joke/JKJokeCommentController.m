@@ -41,6 +41,12 @@
     [self.refreshControl beginRefreshing];
     [self refreshData];
 }
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
 #pragma mark - Init & Datasource
 
 - (void)initRefreshControl
