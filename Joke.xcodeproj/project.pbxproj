@@ -28,6 +28,7 @@
 		CE36405B1A4E63760016A008 /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CE36405A1A4E63760016A008 /* UIImageView+Util.m */; };
 		CE36405D1A4E65F50016A008 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE36405C1A4E65F50016A008 /* avatar.jpg */; };
 		CE3640601A4E9A1E0016A008 /* JKShowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE36405F1A4E9A1E0016A008 /* JKShowImageView.m */; };
+		CE51DF4D1A624D4A00CC31FC /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CE51DF4C1A624D4A00CC31FC /* NSString+MD5.m */; };
 		CE58E19F1A4ED54A005A443D /* JKJokeCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58E19E1A4ED54A005A443D /* JKJokeCommentController.m */; };
 		CE58E1A21A4ED6C5005A443D /* JKLoadMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58E1A11A4ED6C5005A443D /* JKLoadMoreView.m */; };
 		CE58E1A41A4ED6EA005A443D /* JKLoadMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE58E1A31A4ED6EA005A443D /* JKLoadMoreView.xib */; };
@@ -84,6 +85,8 @@
 		CE36405C1A4E65F50016A008 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 		CE36405E1A4E9A1E0016A008 /* JKShowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKShowImageView.h; sourceTree = "<group>"; };
 		CE36405F1A4E9A1E0016A008 /* JKShowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKShowImageView.m; sourceTree = "<group>"; };
+		CE51DF4B1A624D4A00CC31FC /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		CE51DF4C1A624D4A00CC31FC /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		CE58E19D1A4ED54A005A443D /* JKJokeCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKJokeCommentController.h; sourceTree = "<group>"; };
 		CE58E19E1A4ED54A005A443D /* JKJokeCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKJokeCommentController.m; sourceTree = "<group>"; };
 		CE58E1A01A4ED6C5005A443D /* JKLoadMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLoadMoreView.h; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				CE3640571A4DC29C0016A008 /* NSDictionary+Util.m */,
 				CE3640591A4E63760016A008 /* UIImageView+Util.h */,
 				CE36405A1A4E63760016A008 /* UIImageView+Util.m */,
+				CE51DF4B1A624D4A00CC31FC /* NSString+MD5.h */,
+				CE51DF4C1A624D4A00CC31FC /* NSString+MD5.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				CE3640431A4D63930016A008 /* JKFileUtil.m in Sources */,
 				CE36404C1A4D64C30016A008 /* JKTabBarController.m in Sources */,
 				CE3640581A4DC29C0016A008 /* NSDictionary+Util.m in Sources */,
+				CE51DF4D1A624D4A00CC31FC /* NSString+MD5.m in Sources */,
 				CE36400E1A4D594A0016A008 /* main.m in Sources */,
 				CE58E1A21A4ED6C5005A443D /* JKLoadMoreView.m in Sources */,
 				CE3640601A4E9A1E0016A008 /* JKShowImageView.m in Sources */,

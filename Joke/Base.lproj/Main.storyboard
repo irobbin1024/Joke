@@ -523,16 +523,16 @@
                                             <exclude reference="3Ju-Pf-3gR"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="q1q-Xj-pN6"/>
-                                            <exclude reference="u6h-md-TRK"/>
-                                            <exclude reference="Ahe-Tw-9Ma"/>
-                                            <exclude reference="DGu-Xa-v6i"/>
-                                            <exclude reference="ShE-cQ-9M5"/>
                                             <exclude reference="UdJ-OH-25Z"/>
                                             <exclude reference="eQb-Hu-5c2"/>
                                             <exclude reference="nri-FI-cJK"/>
                                             <exclude reference="lxo-oo-EWP"/>
                                             <exclude reference="z60-f2-Grx"/>
+                                            <exclude reference="Ahe-Tw-9Ma"/>
+                                            <exclude reference="DGu-Xa-v6i"/>
+                                            <exclude reference="ShE-cQ-9M5"/>
+                                            <exclude reference="q1q-Xj-pN6"/>
+                                            <exclude reference="u6h-md-TRK"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -543,16 +543,16 @@
                                             <include reference="3Ju-Pf-3gR"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="q1q-Xj-pN6"/>
-                                            <include reference="u6h-md-TRK"/>
-                                            <include reference="Ahe-Tw-9Ma"/>
-                                            <include reference="DGu-Xa-v6i"/>
-                                            <include reference="ShE-cQ-9M5"/>
                                             <include reference="UdJ-OH-25Z"/>
                                             <include reference="eQb-Hu-5c2"/>
                                             <include reference="nri-FI-cJK"/>
                                             <include reference="lxo-oo-EWP"/>
                                             <include reference="z60-f2-Grx"/>
+                                            <include reference="Ahe-Tw-9Ma"/>
+                                            <include reference="DGu-Xa-v6i"/>
+                                            <include reference="ShE-cQ-9M5"/>
+                                            <include reference="q1q-Xj-pN6"/>
+                                            <include reference="u6h-md-TRK"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

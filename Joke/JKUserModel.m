@@ -17,7 +17,7 @@
     
     JKUserModel * userModel = [[JKUserModel alloc]init];
     userModel.createAt = [data[@"created_at"]longLongValue];
-    userModel.icon = [data stringWithKey:@"icon"];
+    userModel.icon = [[data stringWithKey:@"icon"] isEqual:[NSNull null]] ? nil : [data stringWithKey:@"icon"];
     userModel.userID = data[@"id"];
     userModel.login = data[@"login"];
     userModel.state = data[@"role"];

@@ -32,7 +32,7 @@
     jokeModel.content = data[@"content"];
     jokeModel.createAt = [data[@"created_at"]longLongValue];
     jokeModel.jokeID = data[@"id"];
-    jokeModel.image = data[@"image"];
+    jokeModel.image = [data[@"image"] isEqual:[NSNull null]] ? nil : data[@"image"];
     jokeModel.publishAt = [data[@"published_at"]longLongValue];
     jokeModel.state = data[@"state"];
     jokeModel.user = [JKUserModel userWithData:data[@"user"]];

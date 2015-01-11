@@ -43,10 +43,16 @@
 {
     self.jokeModel = jokeModel;
     
+    self.jokeImageView.image = nil;
+    self.userIconImageView.image = nil;
+    
     [self.userIconImageView setImageWithURL:[self.jokeModel.user iconURL] placehold:[UIImage imageNamed:@"avatar.jpg"]];
     self.userNameLabel.text = self.jokeModel.user.login == nil ? @"匿名" : self.jokeModel.user.login;
     self.contentLabel.text = self.jokeModel.content;
-    [self.jokeImageView setImageWithURL:[self.jokeModel smallImageURL]  placehold:nil];
+    
+    if (self.jokeModel.image) {
+        [self.jokeImageView setImageWithURL:[self.jokeModel smallImageURL]  placehold:nil];
+    }
     
     [self.upButton setTitle:[NSString stringWithFormat:@"顶(%ld)", self.jokeModel.votes.up] forState:UIControlStateNormal];
     [self.downButton setTitle:[NSString stringWithFormat:@"踩(%ld)", self.jokeModel.votes.down] forState:UIControlStateNormal];
